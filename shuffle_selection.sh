@@ -6,7 +6,7 @@ selection_array=()
 
 while IFS= read -r game; do
 	selection_array+=("$game")
-done < "games.txt"
+done < "/home/pi/games.txt"
 
 shuffled_array=($(shuf -e "${selection_array[@]}"))
 menu=("${shuffled_array[@]:0:32}")
