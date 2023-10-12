@@ -10,6 +10,7 @@ This was only testing to see how to make it work. If I get any good ideas I migh
 Script just changes my steam accounts username to include 0.5 hour precise clock. At first I tried to do something more precise and fast, but seems that Steam rate limits changes to username etc. if you make too many in a short period. 
 I got a cron job to stop and start the script once a day, so the accuracy with "sleeps" and them hitting correct timeframes won't shift too much.
 Example of my username when it's 11:04
+
 ![image](https://github.com/kattitatu/ASF-bash-scripts/assets/146649947/7b4f19f6-1ece-4203-b7b5-3c5bd4667b86)
 
 
