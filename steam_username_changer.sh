@@ -7,10 +7,14 @@ while [ 1 ]; do
 	hours=${current_time%%:*}
 	minutes=${current_time#*:}
     #round minutes downwards to closest half hour
-	if [ "$minutes" -lt "30" ]; then
+	if [ "$minutes" -lt "15" ]; then
 		minutes="00"
-	else
+	elif [ "$minutes" -lt "30" ]; then
+		minutes="15"
+	elif [ "$minutes" -lt "45" ]; then
 		minutes="30"
+	else
+		minutes="45"
 	fi
 	rounded_time="$hours:$minutes"
 	current_rounded_time="$rounded_time"
